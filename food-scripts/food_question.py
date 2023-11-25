@@ -7,7 +7,7 @@ counter = {}
 with open("favorite_foods.log", "r") as f:
   for line in f:
     food_item = line.strip()
-    if item not in counter:
+    if food_item not in counter:
       counter[food_item] = 1
     else:
       counter[food_item] += 1
